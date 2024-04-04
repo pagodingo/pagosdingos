@@ -9,7 +9,7 @@ const Template = ({ currentPage,
                     
   const editOnGithubHandler = () => {
     window.open(
-    `https://www.github.com/${archive}/edit/master/${[...currentDirectory.map(a =>{ if (a !=='root') return a})].join('/')}/${currentPage}`, "_blank");
+    `https://www.github.com/${archive}/edit/master/${[...currentDirectory.map(a =>{ if (a !=='root') { return a } return})].join('/')}/${currentPage}`, "_blank");
   }
 
   return (
