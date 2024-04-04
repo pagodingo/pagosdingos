@@ -10,7 +10,7 @@ const Template = ({ currentPage,
   const editOnGithubHandler = () => {
     window.open(
     `https://www.github.com/${archive}/edit/master/${[...currentDirectory.map(a =>{ if (a !=='root') { return a } return ''})].join('/')}/${currentPage}`, "_blank");
-  }
+    }
 
   return (
     <>
@@ -41,6 +41,8 @@ const Template = ({ currentPage,
         <p id="page-title" style={{textDecoration: "underline", borderBottom: "1px solid #f6f8fa"}}>{currentPage}</p>
         <p style={{ background: "#ffffff", textAlign: 'right', position: 'fixed', right: '15px', top: '0', margin: '10px', cursor: 'pointer'}} onClick={editOnGithubHandler}><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="gitty-cat" style={{width: '23px', height: 'auto', position: 'fixed', right: '120px', top: 1}} />Edit on GitHub</p>
         <div id="main" />
+        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
         </div>
       </>
   );

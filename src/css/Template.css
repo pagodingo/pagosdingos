@@ -11,6 +11,10 @@ body, html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.darkmode-layer--button, .darkmode-layer, .darkrmode-toggle {
+  z-index: 1 !important;
+}
+
 @media (min-width: 200px){
   #right {
     margin-left: 0px;
