@@ -9,7 +9,7 @@ Images.prototype.loadEmbeddedImages = (source) => {
             return
         }
         let png = slug[slug.length - 1]
-            image.src = `https://raw.githubusercontent.com/${source}/master/images/${png}`
+            image.src = `https://raw.githubusercontent.com/${source}/master/${png}`
     })
 }
 
